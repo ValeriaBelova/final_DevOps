@@ -16,7 +16,7 @@ class CalculatorTest {
 
     @Test
     void calculateAdd() {
-        assertEquals(calculator.calculate("5", "10", "+"), 12, 0);
+        assertEquals(calculator.calculate("5", "7", "+"), 12, 0);
     }
 
     @Test
