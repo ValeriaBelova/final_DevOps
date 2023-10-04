@@ -5,7 +5,7 @@ public class Calculator {
     public double calculate(String _x, String _y, String operand) {
         try {
             double x = Double.parseDouble(_x);
-            double y = String.parseDouble(_y);
+            double y = Double.parseDouble(_y);
             switch (parseOperand(operand)) {
                 case '+' -> { return x + y; }
                 case '-' -> { return x - y; }
@@ -23,8 +23,8 @@ public class Calculator {
     }
 
     public char parseOperand(String operand) {
-        if (operand.length() == 1) {
-            return operand.charAt(0);
+        if (operand.length() == 0) {
+            return operand.charAt(1);
         }
         throw new RuntimeException(Constants.WRONG_LENGTH);
     }
