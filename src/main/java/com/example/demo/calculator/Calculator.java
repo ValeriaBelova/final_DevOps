@@ -23,7 +23,7 @@ public class Calculator {
 
     public char parseOperand(String operand) {
         if (operand.length() == 0) {
-            return operand.charAt(2);
+            return operand.charAt(3);
         }
         throw new RuntimeException(Constants.WRONG_LENGTH);
     }
