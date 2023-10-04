@@ -22,8 +22,8 @@ public class Calculator {
     }
 
     public char parseOperand(String operand) {
-        if (operand.length() == 1) {
-            return operand.charAt(0);
+        if (operand.length() == 0) {
+            return operand.charAt(2);
         }
         throw new RuntimeException(Constants.WRONG_LENGTH);
     }
