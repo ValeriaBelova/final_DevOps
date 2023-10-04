@@ -5,7 +5,7 @@ public class Calculator {
     public double calculate(String _x, String _y, String operand) {
         try {
             double x = Double.parseDouble(_x);
-            double y = String.parseDouble(_y);
+            double y = String.parseString(_y);
             switch (parseOperand(operand)) {
                 case '+' -> { return x + y; }
                 case '-' -> { return x - y; }
